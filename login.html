@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Launch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="brand">Cosmic Launch</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Home</a>
+          <a id="clicked"href="login.html">Login</a>
+          <a href="launch.html">Launch</a>
+          <a href="missions.html">Missions</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+    <div class="loginpage">
+     <form class="modal-content animate" action="login.html" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <a href="index.html"><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> </a>
+      <!--span class="psw">Forgot <a href="#">password?</a></span-->
+    </div>
+  </form>
+</div>
+
+     <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+     </script>
+    
+  </body>
+</html>
+

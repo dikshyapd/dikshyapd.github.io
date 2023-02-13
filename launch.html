@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Launch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="missions.css">
+    <link rel="stylesheet" href="launch.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="brand">Cosmic Launch</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a id="clicked" href="launch.html">Launch</a>
+          <a href="missions.html">Missions</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+  <div class="home2">
+      <video class="video-slide active" src="" autoplay muted loop></video>
+      <img class="video-slide" src="images/train.jpg"></img>
+      <img class="video-slide" src="images/gear.jpg"></img>
+      <img class="video-slide" src="images/rocket.jpg"></img>
+      <img class="video-slide" src="images/nep.jpg"></img>
+      
+  <div class="home-content">
+      <div class="content active">
+        <h1>Precautions of<br><span>Launch</span></h1>
+        <p>See how we keep our astronauts safe during their travel journeys.</p>
+        
+      </div>
+      <div class="content">
+        <h1>Training<br><span></span></h1>
+        <p>In order to make sure our future astronauts will be safe in not only launch, but also during their stay, training is a requirement for all. Training time is about 2 weeks of physical strength, diet, suit control, and low gravity walks.</p>
+        
+        <!--a href="">Tickets</a-->
+       
+      </div>
+      <div class="content">
+        <h1>Gear<br><span></span></h1>
+        <p>Cosmic Launch provides the best quality space gear. All suits are created with pure steel, and cotton, tinfoil for gloves, as well as leather boots for the best footprints on outer space rocks.  </p>
+        
+      </div>
+      <div class="content">
+        <h1>Rockets<br><span></span></h1>
+        <p> Our Rockets were originally planed 200 years ago, which resulted in the best protection for astronauts today. With the outer-layer made of pure silver and interior of silk, feel comfort while launching!  </p>
+       
+      </div>
+    
+      <!--div class="content">
+        <h1>Neptune<br><span></span></h1>
+        <p>Our , Googgle and NASAA.</p>
+        
+  </div-->
+  </div>
+        <div class="slider-navigation3">
+        <div class="hidden"><div id="slider2" class="nav-btn active">p</div>Safety</div>
+        <div id="slider2" class="nav-btn "><a>Training</a></div>
+        <div id="slider2" class="nav-btn"><a>Gear</a></div>
+        <div id="slider2" class="nav-btn"><a>Rockets</a></div>
+          
+        <!--div id="slider2" class="nav-btn"><a>Tickets</a></div-->
+      </div>
+    </section>
+  </div>
+    
+    <script>
+      
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+        const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Launch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pagestyle.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+    
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="brand">Cosmic Launch</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a id="clicked" href="index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="launch.html">Launch</a>
+          <a href="missions.html">Missions</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="videos/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Reach Beyond<br><span>Your Limits.</span></h1>
+        <p>Cosmic Launch is an America-based space corporation on a mission to deliver quality space experiences. We offer affordable space travel for all, hoping to create a living space beyond our planet Earth each astronaut at a time.</p>
+        <a href="login.html">Get Started</a>
+      </div>
+      <div class="content">
+        <h1>Simple<br><span>Steps.</span></h1>
+        <p>Cosmic Launch hopes of bringing the outer space to the people. With our simple ticketing system, your steps of becoming an astronaut are cut short to only a few weeks of waiting. Exprience that outer space dream with only a few clicks! </p>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="content">
+        <h1>Explore<br><span>Your Deams.</span></h1>
+        <p>Exploring the galaxy has never been simpler. With Cosmic Launch, view what you've always dreamed of. Becoming an astronaut with Cosmic only takes a few weeks. Cosmic is the top rated space company, trusted by thousands. </p>
+        <a href="about.html">About</a>
+      </div>
+      <div class="content">
+        <h1>The Trip<br><span>Of A Lifetime.</span></h1>
+        <p>Cosmic Launch offers the travel of a lifetime. With our 5 star rated hotels and space stations, you can experience out-of-this-world sights. Trips are currently limited to the Moon and Mars. </p>
+        <a href="missions.html">Missions</a>
+      </div>
+    
+      <div class="content">
+        <h1>Safety<br><span>First.</span></h1>
+        <p>Our priority is always safety. Cosmic Launch's rockets have been tested and used for decades, and have been built with high quality. Cosmic Launch has been trusted by the world's leading companies such as Netflic, Googgle and NASAA.</p>
+        <a href="about.html">Read More</a>
+      </div>
+      <!---div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div--->
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+<!--div class="footer">
+  <p>all rights reserved TSA</p>
+  </div-->
+    
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>
+      
