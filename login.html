@@ -21,12 +21,12 @@
           <a id="clicked"href="login.html">Login</a>
           <a href="launch.html">Launch</a>
           <a href="missions.html">Missions</a>
-          <a href="about.html">About</a>
+          <a href="about.html">Resources</a>
         </div>
       </div>
     </header>
     <div class="loginpage">
-     <form class="modal-content animate" action="login.html" method="post">
+     <form class="modal-content animate" action="comingsoon.html" method="post">
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
@@ -34,22 +34,29 @@
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
+            <div class="container user">
+     <a href="comingsoon.html"><button>Login</button></a>
+            </div>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label><br>
+        <label>
+        <input type="checkbox" checked="checked" name="remember" required> Agree to terms and conditions of Cosmic Launch. Must agree everytime you login.
       </label>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <div id="username" class="container" style="background-color:#f1f1f1">
       <a href="index.html"><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> </a>
-      <!--span class="psw">Forgot <a href="#">password?</a></span-->
+      <!--span class="psw">Forgot <a href="#">password?</a></span
+      
+     <a href="comingsoon.html"><button type="submit">Login</button></a>
+      -->
     </div>
   </form>
 </div>
 
      <script type="text/javascript">
-    //Javacript for responsive navigation menu
+    ///navigation menu
     const menuBtn = document.querySelector(".menu-btn");
     const navigation = document.querySelector(".navigation");
 
@@ -57,6 +64,10 @@
       menuBtn.classList.toggle("active");
       navigation.classList.toggle("active");
     });
+
+    var input = document.getElementById('username');
+     function user(){
+       alert(input.value);
      </script>
     
   </body>

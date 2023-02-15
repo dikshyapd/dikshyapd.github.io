@@ -23,4 +23,13 @@
   flex-direction: column;
 }
 
+p a{
+  color:grey;
+  position: relative;
+  z-index: 888;
+}
 
+p{
+  z-index:888;
+  position: relative;
+}
