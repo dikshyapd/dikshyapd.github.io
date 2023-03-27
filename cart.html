@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Launch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="brand">Cosmic Launch</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="ticket.html">Tickets</a>
+          <a id="clicked" href="cart.html"> <img src="images/cart.svg"></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="tickSign">Shopping Cart</div>
+    <button onclick="showw()"></button>
+    <section class="content">
+      <div class="outline">
+
+      <div class="planet">
+        <div class="hiddenmoon1"  id="hiddenmoon1">
+      
+    
+        <div class="Tinfo">
+          <h1>Moon</h1>
+          Round trip
+          <div class="info">
+            Take a trip to and back from the moon.
+          </div>
+          <div class="price">
+            $12.01
+          </div>
+          <button onclick="moon1()"  id="moon1" class="addToCart">
+            Remove from Cart
+          </button>
+        </div>
+    </div>
+         
+    
+      
+
+        
+        <div class="Tinfo">
+           <h1>Moon</h1>
+           Trip + 1 month stay
+          <div class="info">
+            Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet. 
+          </div>
+          <div class="price">
+            $1.01
+          </div>
+          <button class="addToCart">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+        
+      <div class="planet">
+        <div class="Tinfo">
+          <h1>Mars</h1>
+          Round trip
+          <div class="info">
+            Take a trip to and back from the Mars.
+          </div>
+          <div class="price">
+            $1.001
+          </div>
+          <button class="addToCart">
+            Add to Cart
+          </button>
+        </div>
+      
+
+        
+        <div class="Tinfo">
+          <h1>Mars</h1>
+           Trip + 1 month stay
+          <div class="info">
+            Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet. 
+          </div>
+          <div class="price">
+            $120.01
+          </div>
+          <button class="addToCart">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+        
+      <div class="planet">
+        <div class="Tinfo">
+          <h1>Mercury</h1>
+          Round trip
+          <div class="info">
+            Take a trip to and back from the Mercury.
+          </div>
+          <div class="price">
+            $0.109
+          </div>
+          <button class="addToCart">
+            Add to Cart
+          </button>
+        </div>
+
+        
+        <div class="Tinfo">
+          <h1>Mercury</h1>
+           Trip + 1 month stay
+          <div class="info">
+            Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet. 
+          </div>
+          <div class="price">
+            $13.01
+          </div>
+          <button class="addToCart">
+            Add to Cart
+          </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+     <script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+     </script>
+    
+  </body>
+</html>

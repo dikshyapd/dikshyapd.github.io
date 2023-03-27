@@ -12,7 +12,7 @@
     
   </head>
   <body>
-
+    <!-----------Nav bar----------->
     <header>
       <a href="index.html" class="brand">Cosmic Launch</a>
       <div class="menu-btn"></div>
@@ -22,11 +22,12 @@
           <a href="login.html">Login</a>
           <a href="launch.html">Launch</a>
           <a href="missions.html">Missions</a>
+          <a href="ticket.html">Tickets</a>
           <a href="about.html">Resources</a>
         </div>
       </div>
     </header>
-
+    <!----------- home page videos ----------->
     <section class="home">
       <video class="video-slide active" src="videos/1.mp4" autoplay muted loop></video>
       <video class="video-slide" src="videos/2.mp4" autoplay muted loop></video>
@@ -86,7 +87,7 @@
       navigation.classList.toggle("active");
     });
 
-    //Javacript for video slider navigation
+    //Slide
     const btns = document.querySelectorAll(".nav-btn");
     const slides = document.querySelectorAll(".video-slide");
     const contents = document.querySelectorAll(".content");

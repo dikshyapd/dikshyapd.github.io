@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Launch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ticket.css">
+  <link rel="stylesheet" href="login.css">
+
+  
+  <link rel="icon" type="image/x-icon" href="images/icon.svg">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&display=swap');
+</style>
+<body>
+
+  <header>
+    <a href="index.html" class="brand">Cosmic Launch</a>
+    <div id="menucloser" class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a id="clicked" href="ticket.html">Tickets</a>
+
+
+
+        <a style="cursor: pointer;"> <img onclick="openNav()" class="cartIcon" src="images/cart.svg"></a>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <div class="carttitle">Cart</div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <section class="content11">
+          <div class="outline">
+             <div class="hiddenmoon1" id="hiddenmoon1">
+            <div class="planetC">
+                <div class="TinfoCart">
+                  <h1>Moon</h1>
+                  Round trip
+                  <div class="infoC">
+                    Take a trip to and back from the moon.
+                  </div>
+                  <div class="priceC">
+                    $12.01
+                  </div>
+                  
+                </div>
+              </div>
+             </div>
+
+            <div class="planetC">
+              <div id="hiddenmoon2" class="hiddenmoon2">
+              <div class="TinfoCart">
+                <h1>Moon</h1>
+                Trip + 1 month stay
+                <div class="infoC">
+                  Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet.
+                </div>
+                <div class="priceC">
+                  $1.01
+                </div>
+                
+              </div>
+            </div>
+               </div>
+            </div>
+
+          <div class="planetC">
+            <div id="mars1" class="mars1">
+              <div class="TinfoCart">
+                <h1>Mars</h1>
+                Round trip
+                <div class="infoC">
+                  Take a trip to and back from the Mars.
+                </div>
+                <div class="priceC">
+                  $1.001
+                </div>
+                
+              </div>
+            </div>
+            </div>
+
+          <div class="planetC">
+              <div id="mars2" class="mars2">
+              <div class="TinfoCart">
+                <h1>Mars</h1>
+                Trip + 1 month stay
+                <div class="infoC">
+                  Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet.
+                </div>
+                <div class="priceC">
+                  $120.01
+                </div>
+                
+              </div>
+            </div>
+            </div>
+
+          <div class="planetC">
+            <div id="merc1" class="merc1">
+              <div class="TinfoCart">
+                <h1>Mercury</h1>
+                Round trip
+                <div class="infoC">
+                  Take a trip to and back from the Mercury.
+                </div>
+                <div class="priceC">
+                  $0.109
+                </div>
+               
+              </div>
+            </div>
+            </div>
+
+          <div class="planetC">
+            <div id="merc2" class="merc2">
+              <div class="TinfoCart">
+                <h1>Mercury</h1>
+                Trip + 1 month stay
+                <div class="infoC">
+                  Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet.
+                </div>
+                <div class="priceC">
+                  $13.01
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <button onclick="pbtn()"class="p-btn">
+            Purchase
+          </button>
+          </div>
+            </section>
+
+      </div>
+      
+    </div>
+    </div>
+  </header>
+  <div class="tickSign">Shop Tickets</div>
+
+  <span  class="popuptext" id="myPopup">Item sucessfully added to Cart!</span>
+    
+  </div>
+  <section class="content">
+    <div class="planet">
+      <h1>Moon</h1>
+      <div class="Tinfo">
+        Round trip
+        <div class="info">
+          Take a trip to and back from the moon.
+        </div>
+        <div class="price">
+          $12.01
+        </div>
+          <button onclick="moon1cart()" class="addToCart">
+            <div class="popup">
+              Add to Cart
+  
+        </div>
+        </button>
+      </div>
+      <div class="Tinfo">
+        Trip + 1 month stay
+        <div class="info">
+          Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet.
+        </div>
+        <div class="price">
+          $1.01
+        </div>
+        <button onclick="moon2cart()" class="addToCart">
+            <div class="popup">
+              Add to Cart
+              
+        </div>
+        </button>
+      </div>
+    </div>
+    <div class="planet">
+      <h1>Mars</h1>
+      <div class="Tinfo">
+        Round trip
+        <div class="info">
+          Take a trip to and back from the Mars.
+        </div>
+        <div class="price">
+          $1.001
+        </div>
+        <button onclick="mars1cart()" class="addToCart">
+            <div class="popup">
+              Add to Cart
+              
+        </div>
+        </button>
+      </div>
+      <div class="Tinfo">
+        Trip + 1 month stay
+        <div class="info">
+          Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet.
+        </div>
+        <div class="price">
+          $120.01
+        </div>
+        <button onclick="mars2cart()" class="addToCart">
+            <div class="popup">
+              Add to Cart
+              
+        </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="planet">
+      <h1>Mercury</h1>
+      <div class="Tinfo">
+        Round trip
+        <div class="info">
+          Take a trip to and back from the Mercury.
+        </div>
+        <div class="price">
+          $0.109
+        </div>
+        <button onclick="merc1cart()" class="addToCart">
+            <div class="popup">
+              Add to Cart
+              
+        </div>
+        </button>
+      </div>
+      <div class="Tinfo">
+        Trip + 1 month stay
+        <div class="info">
+          Ticket includes a round trip plus a 1 month stay at our newest "Salllly" staliet.
+        </div>
+        <div class="price">
+          $13.01
+        </div>
+        <button onclick="merc2cart()" class="addToCart">
+            <div class="popup">
+              Add to Cart
+              
+        </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!---div class="footer">
+    Disclaimer: any "purchase" or "prices" on this website are fictional and 
+  </div--->
+  <script src="script.js"></script>
+  <script type="text/javascript">
+
+     function openNav() {
+          document.getElementById("mySidenav").style.width = "280px";
+          document.getElementById('menucloser').style.display = 'contents';
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          function menuback() {
+            document.getElementById('menucloser').style.display = 'flex';
+          }
+          setTimeout(menuback, 600);
+        }
+    
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+  </script>
+
+</body>
+
+</html>

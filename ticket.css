@@ -1,0 +1,402 @@
+section {
+  justify-content: space-evenly;
+  position: relative;
+  display: flex;
+  margin-top: 12px;
+  flex-wrap: wrap;   
+}
+section:before{
+  transition: 0.3s ease;
+}
+@media screen and (max-width:800px){
+  section{
+    flex-direction: column;
+    margin-bottom: -40%;
+  }
+  .planet{
+    margin-bottom:20%;
+    height: 15%;
+    width:200px;
+  }
+}
+
+.planet{
+    background-color: rgba(25,25,25,0.85);
+    margin-left: 20px;
+    height: 30%;
+    width: 40%;
+
+    text-align: center;
+    border-radius: 5px;
+  color: white;
+}
+
+.planet.planet:nth-child(1){
+  background-image: url("images/moon.jpg");
+  background-size: cover;
+
+}
+
+.planet.planet:nth-child(2){
+  background-image: url("images/mars.jpg");
+  background-size: cover;
+}
+
+.planet.planet:nth-child(3){
+  background-image: url("images/merc.jpg");
+  background-size: cover;
+}
+
+.planet.planet:nth-child(4){
+  background-image: url("images/nep.jpg");
+  background-size: cover;
+}
+.planet:nth-child(-n+2){
+  margin-bottom:20px;
+}
+.planet {
+width: 32%;
+overflow: hidden;
+margin: 0 auto;
+}
+
+.planet .Tinfo{
+  background-color: rgba(255, 255, 255, 0.8);
+  color:black;
+  text-align: left;
+  padding:2%;
+  font-weight:600;
+}
+
+.info{
+  font-weight: 400;
+}
+
+.planet img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+/*-----------------------
+.planet:hover{
+  transform: scale(1.2);
+  overflow: hidden;
+  position: relative;
+}
+--*/
+
+     
+
+h1{
+  padding:20% 1% 5% 1%;
+}
+
+
+.addToCart{
+  text-align: center;
+  margin:2% 0 2%;
+  background-color: rgba(125,125,125,0.75);
+}
+
+.price{
+  font-style: monospace;
+  font-weight: 700;
+  text-align:center;
+}
+
+@media screen and (max-width: 800px){
+  .planet{
+    margin:2%;
+    width:80%;
+    align-self:center;
+    overflow-y: hidden;
+    
+  }
+}
+
+.home1 .content1 h1{
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 100px;
+  margin-bottom: 40px;
+  color: white;
+  padding: 10% 6% 0% 6%;
+  text-align: center;
+  display: none;
+}
+
+.home1 .content1 h1 span{
+  font-size: 1.2em;
+  font-weight: 600;
+  color:white;
+}
+
+.tickSign{
+  text-align:center;
+  height:20px;
+  font-weight:600;
+  margin: 10% 0 0 0;
+  color:white;
+  font-size:280%;
+  letter-spacing: 3px;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popuptext {
+    visibility: hidden; 
+    background-color: rgba(55,55,55,.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3%;
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    font-size: 1rem;
+    /* bottom: 125%; */
+    left: 45%;
+    margin-left: -80px;
+}
+
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1d1b1b transparent transparent transparent;
+  opacity: 1;
+  
+}
+
+@keyframes bounce {
+  0% {
+    opacity:.1;
+  }
+  5% {
+    opacity:1;
+  }
+  50%{
+    opacity: 1;
+  }
+
+  90%{
+    opacity: .1;
+  }
+  
+  100%{
+    opacity:0;
+  } 
+}
+
+.popup .show {
+  visibility: visible;
+  animation: bounce 4s;
+}
+.popup .noshow {
+  visibility: hidden;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 45px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+
+
+
+section .outline{
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: 12px;
+  flex-wrap: wrap;   
+}
+
+section .outline:before{
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width:800px){
+  section{
+    flex-direction: column;
+    margin-bottom: -40%;
+  }
+  .planetC{
+    margin-bottom:20%;
+    height: 15%;
+    
+  }
+}
+
+.planetC .TinfoCart{
+  background-color: rgba(255, 255, 255, 0.8);
+  color:black;
+  text-align: left;
+  padding:2%;
+  font-weight:600;
+}
+
+.infoC{
+  font-weight: 400;
+}
+/*----*/
+.tickSign{
+  text-align:center;
+  height:20px;
+  font-weight:600;
+  margin: 10% 0 0 0;
+  color:white;
+  font-size:280%;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 800px){
+  .tickSign{
+    margin:20% 0 0 0;
+  }
+}
+
+@media (max-width: 470px){
+  .tickSign{
+    margin:30% 0 0 0;
+    letter-spacing: 1px;
+  }
+}
+
+.priceC{
+  text-align: center;
+  position: relative;
+  font-size:110%;
+  padding:5px;
+}
+
+.hiddenmoon1{
+  color: white;
+  display: none;
+}
+
+.hiddenmoon2{
+  color: white;
+  display: none;
+}
+
+@keyframes show {
+  0% {
+    opacity:.1;}
+    
+  100%{
+    opacity:0;
+  } 
+}
+
+.hiddenmoon1 .show {
+  visibility: visible;
+  animation: show 1s;
+}
+
+.hiddenmoon2 .show{
+  visibility: visible;
+  animation: show 1s;
+}
+
+.mars1 .show{
+  visibility: visible;
+  animation: show 1s;
+}
+
+.mars1{
+  display: none;
+}
+
+.mars2 .show{
+  visibility: visible;
+  animation: show 1s;
+}
+
+.mars2{
+  display: none;
+}
+
+.merc1 .show{
+  visibility: visible;
+  animation: show 1s;
+}
+
+.merc1{
+  display: none;
+}
+
+.merc2 .show{
+  visibility: visible;
+  animation: show 1s;
+}
+
+.merc2{
+  display: none;
+}
+
+.demo {
+   display:content;
+}
+
+section.content11 {
+  padding: 12px;
+}
+
+.planetC {
+    color: white;
+    background-color: rgba(220,220,220,.2);
+  margin: 9px;
+}
+
+.planetC h1{
+  padding: 20px 0;
+}
+
+button .p-btn{
+  font-weight:500;
+  background-color: darkblue;
+}
+
+

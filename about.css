@@ -33,3 +33,9 @@ p{
   z-index:888;
   position: relative;
 }
+
+header h1 .welcome{
+  font-size: 2rem;
+  color:white;
+}
+

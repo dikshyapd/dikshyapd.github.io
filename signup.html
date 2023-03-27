@@ -18,46 +18,56 @@
       <div class="navigation">
         <div class="navigation-items">
           <a href="index.html">Home</a>
-          <a id="clicked" href="login.html">Login</a>
+          <a href="login.html">Login</a>
+          
           <a href="launch.html">Launch</a>
           <a href="missions.html">Missions</a>
+            
           <a href="ticket.html">Tickets</a>
           <a href="about.html">Resources</a>
         </div>
       </div>
     </header>
     <div class="loginpage">
+      
+      
      <div class="modal-content animate">
      <!---form class="modal-content animate" action="/comingsoon.html"--->
-       
+       <div id="username" class="container" style="background-color:#f1f1f1"><div>Request to create an account in the form below. You will recieve an email once we get your account set up. Already have an account? <a href="login.html"> Login</a>.</div> </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+      <label for="country"><b>Country</b></label>
+      <input type="text" placeholder="Enter Username" name="country" id="country" required>
+
+      <label for="Email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="Email" id="Email" required>
+      
+      <label for="uname"><b>Create an Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" id="username" required>
 
-      <label for="psw"><b>Password</b></label>
+      <label for="psw"><b>Create a Password</b></label>
       <input type="password" placeholder="Enter Password Here" name="psw"  id="pass" required>
             <div class="container user">
      
             </div>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label><br>
+      
         <label>
         <input type="checkbox" checked="checked" name="remember" required> Agree to terms and conditions of Cosmic Launch.
       </label>
-      <!--a href="comingsoon.html"--><button onclick="login()" >Login</button>
+      <!--a href="comingsoon.html"--><button onclick="Signup()" >Request Sign Up</button>
       
     </div>
-<span class="popuptext" id="myPopup">A Simple Popup!</span>
-    <div id="username" class="container" style="background-color:#f1f1f1">
       
       <!---a href="index.html"><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> </a---> 
       
-        Don't have an account? Request to <a href="signup.html">create an account</a>.
       
       
-        </div>
+      
+    
       <!--span class="psw">Forgot <a href="#">password?</a></span
       
      <a href="comingsoon.html"><button type="submit">Login</button></a>
@@ -67,10 +77,10 @@
 </div>
 
      <script type="text/javascript">
-       function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
+       function Signup(){
+         alert("Thankyou for your request! We will send you an email once we have your account set up.");
+         window.location.href = "signup.html";
+       }
        
          var user = document.getElementById('username');
      var pass = document.getElementById('pass');

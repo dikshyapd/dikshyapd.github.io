@@ -1,0 +1,116 @@
+section {
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: 12px;
+  flex-wrap: wrap;   
+}
+
+section:before{
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width:800px){
+  section{
+    flex-direction: column;
+    margin-bottom: -40%;
+  }
+  .planet{
+    margin-bottom:20%;
+    height: 15%;
+    
+  }
+}
+/*
+.planet.planet:nth-child(1){
+  background-image: url("images/moon.jpg");
+  background-size: cover;
+
+}
+
+.planet.planet:nth-child(2){
+  background-image: url("images/mars.jpg");
+  background-size: cover;
+}
+
+.planet.planet:nth-child(3){
+  background-image: url("images/merc.jpg");
+  background-size: cover;
+}
+
+.planet.planet:nth-child(4){
+  background-image: url("images/nep.jpg");
+  background-size: cover;
+}
+*/
+.planet .Tinfo{
+  background-color: rgba(255, 255, 255, 0.8);
+  margin:15px;
+  color:black;
+  text-align: left;
+  padding:2%;
+  font-weight:600;
+}
+
+.info{
+  font-weight: 400;
+  width:75%;
+}
+
+.tickSign{
+  text-align:center;
+  height:20px;
+  font-weight:600;
+  margin: 10% 0 0 0;
+  color:white;
+  font-size:280%;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 800px){
+  .tickSign{
+    margin:20% 0 0 0;
+  }
+}
+
+@media (max-width: 470px){
+  .tickSign{
+    margin:30% 0 0 0;
+    letter-spacing: 1px;
+  }
+}
+
+.outline{
+  background-color: rgba(25,25,25,0.35);
+  padding:1%;
+}
+
+.price{
+  text-align: right;
+  bottom:40px;
+  position: relative;
+  right:40px;
+  font-size:130%;
+}
+
+.hiddenmoon1{
+  color: white;
+  display: none;
+}
+
+@keyframes show {
+  0% {
+    opacity:.1;}
+    
+  100%{
+    opacity:0;
+  } 
+}
+
+.hiddenmoon1 .show {
+  visibility: visible;
+  animation: show 1s;
+}
+
+.demo {
+   display: none;
+}

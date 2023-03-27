@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -18,10 +17,11 @@ header{
   align-items: center;
   padding: 15px 200px;
   transition: 0.5s ease;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 header .brand{
-  color: #fff;
+  color: #012053;
   font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
@@ -38,7 +38,7 @@ header .navigation{
 
 header .navigation .navigation-items a{
   position: relative;
-  color: #fff;
+  color: #012053;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
@@ -49,7 +49,7 @@ header .navigation .navigation-items a{
 header .navigation .navigation-items a:before{
   content: '';
   position: absolute;
-  background: #fff;
+  background: #012053;
   width: 0;
   height: 3px;
   bottom: -35%;
@@ -60,8 +60,8 @@ header .navigation .navigation-items a:before{
 #clicked{
   text-decoration: underline;
   text-underline-offset:8.5px;
-  text-decoration-thickness: 4px;
-  text-decoration-color: white;
+  text-decoration-thickness: 3px;
+  text-decoration-color:#012053;
 }
 
 #clicked:before{
@@ -107,6 +107,7 @@ section{
 
 .home .content.active{
   display: block;
+  width:auto;
 }
 
 .home .content h1{
@@ -115,7 +116,7 @@ section{
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 75px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .home .content h1 span{
@@ -127,12 +128,14 @@ section{
   margin-bottom: 65px;
   backdrop-filter: blur(15px);
   padding:2%;
+  left: 20%;
+  width: 70%;
 }
 
 .home .content a{
   background: #fff;
   padding: 15px 35px;
-  color: #1680AC;
+  color: #012053;
   font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
@@ -186,6 +189,7 @@ section{
   align-items: center;
   transform: translateY(30px);
   margin-bottom: 12px;
+  
 }
 
 .slider-navigation .nav-btn{
@@ -222,7 +226,7 @@ section{
   transition-property: clip-path;
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1240px){
   header{
     padding: 12px 20px;
   }
@@ -275,6 +279,26 @@ section{
     box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
   }
 
+    header .navigation.active .navigation-items .dropdown{ background: #ffffff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);}
+
+  header .navigation.active .navigation-items .cartIcon{
+    filter: invert(100%);
+    width:50%;
+    margin: 0 22% 0 22%;
+    cursor: pointer;
+    
+    
+  }
+
   header .navigation.active .navigation-items #clicked{
     text-decoration: underline;
     text-underline-offset:10px;
@@ -290,7 +314,6 @@ section{
     height: 40px;
     cursor: pointer;
     transition: 0.3s ease;
-    filter:invert(1);
   }
 
   .menu-btn.active{
@@ -308,4 +331,51 @@ section{
     line-height: 60px;
   }
 }
-      
+
+
+header .navigation img{
+  width: 9%;
+  position: relative;
+  top: 9px;
+  filter:invert(1);
+}
+
+.carttitle{
+color: grey;
+    left: 8%;
+    font-size: 25px;
+    position: relative;
+}
+
+
+
+@media (min-width: 1240px){
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top:40px;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  margin: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+}

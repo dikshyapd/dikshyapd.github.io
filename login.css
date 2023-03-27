@@ -49,15 +49,14 @@ span.psw {
 
 
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%; 
 }
 
-/* Add Zoom Animation */
+
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
@@ -73,7 +72,7 @@ span.psw {
   to {transform: scale(1)}
 }
 
-/* Change styles for span and cancel button on extra small screens */
+
 @media screen and (max-width: 300px) {
   span.psw {
      display: block;
@@ -98,5 +97,28 @@ span.psw {
   .loginpage{
   margin:25% 2%;
 }
+}
+@keyframes show {
+  0% {
+    opacity:.1;}
+    
+  100%{
+    opacity:0;
+  } 
+}
+.popuptext{
+  display: none;
+}
+.popup .show{
+  visibility: visible;
+  animation: show 1s;
+}
+
+ .signupt{
+  font-weight:600;
+  font-size: 22px;
+  margin: 0 0 5px;
+  color:#012053;
+  text-align:center;
 }
 

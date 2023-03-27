@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic Launch</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="missions.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="images/icon.svg">
-  </head>
-  <body>
 
-    <header>
-      <a href="index.html" class="brand">Cosmic Launch</a>
-      <div class="menu-btn"></div>
-      <div class="navigation">
-        <div class="navigation-items">
-          <a href="index.html">Home</a>
-          <a href="login.html">Login</a>
-          <a href="launch.html">Launch</a>
-          <a id="clicked" href="missions.html">Missions</a>
-          <a href="about.html">Resources</a>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Launch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="missions.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="images/icon.svg">
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="brand">Cosmic Launch</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="launch.html">Launch</a>
+        <a id="clicked" href="missions.html">Missions</a>
+        <a href="ticket.html">Tickets</a>
+        <a href="about.html">Resources</a>
       </div>
-    </header>
-<section class="home">
-  <div class="home2">
+    </div>
+  </header>
+  <section class="home">
+    <div class="home2">
       <video class="video-slide active" src="" autoplay muted loop></video>
       <img class="video-slide" src="images/moon.jpg"></img>
       <img class="video-slide" src="images/mars.jpg"></img>
       <img class="video-slide" src="images/merc.jpg"></img>
       <img class="video-slide" src="images/nep.jpg"></img>
-      
-  <div class="home-content">
-      <div class="content active">
-        <h1>Travel opportunities <br><span></span></h1>
-        <p>Currently, only Moon and Mars are available for travel. Mercury and Neptune are estimated to be visitable within a few decades.</p>
-        
+
+      <div class="home-content">
+        <div class="content active">
+          <h1>Travel opportunities <br><span></span></h1>
+          <p>Currently, only Moon and Mars are available for travel. Mercury and Neptune are estimated to be visitable
+            within a few decades.</p>
+
+        </div>
+        <div class="content">
+          <h1>The Moon<br><span></span></h1>
+          <p>Visit the moon, earth's one and only natural satellite. Take trail walks of nearly 12,000 miles, stays are
+            available for up to 6 days!</p>
+          <!--a class="missions_a"href="tickets.html">Tickets</a-->
+
+        </div>
+        <div class="content">
+          <h1>Mars<br><span></span></h1>
+          <p>Travel to the 4th planet in our solar system. Our destination Mars travel package includes a 3-day stay and
+            a 2,000-mile trail walk.</p>
+
+        </div>
+        <div class="content">
+          <h1>Mercury<br><span></span></h1>
+          <p>Mission Mercury is in progress. Make plans to visit the closest planet to the Sun. Now just a little more
+            than a decade of waiting left!</p>
+
+        </div>
+
+        <div class="content">
+          <h1>Neptune<br><span></span></h1>
+          <p>Neptune is our most anticipated travel destination by our clients. As this is the furthest planet,
+            scientists estimate the travel waiting time is two decades.</p>
+
+        </div>
       </div>
-      <div class="content">
-        <h1>The Moon<br><span></span></h1>
-        <p>Visit the moon, earth's one and only natural satellite. Take trail walks of nearly 12,000 miles, stays are available for up to 6 days!</p>
-        <!--a class="missions_a"href="tickets.html">Tickets</a-->
-       
-      </div>
-      <div class="content">
-        <h1>Mars<br><span></span></h1>
-        <p>Travel to the 4th planet in our solar system. Our destination Mars travel package includes a 3-day stay and a 2,000-mile trail walk.</p>
-        
-      </div>
-      <div class="content">
-        <h1>Mercury<br><span></span></h1>
-        <p>Mission Mercury is in progress. Make plans to visit the closest planet to the Sun. Now just a little more than a decade of waiting left!</p>
-       
-      </div>
-    
-      <div class="content">
-        <h1>Neptune<br><span></span></h1>
-        <p>Neptune is our most anticipated travel destination by our clients. As this is the furthest planet, scientists estimate the travel waiting time is two decades.</p>
-        
-      </div>
-  </div>
-        <div class="slider-navigation2">
-        <div class="hidden"><div id="slider2" class="nav-btn active">p</div></div>
+      <div class="slider-navigation2">
+        <div class="hidden">
+          <div id="slider2" class="nav-btn active">p</div>
+        </div>
         <div id="slider2" class="nav-btn "></div>
         <div id="slider2" class="nav-btn"></div>
         <div id="slider2" class="nav-btn"></div>
         <div class="nav-btn"></div>
       </div>
-    </section>
+  </section>
   </div>
-    
-    <script>
+
+  <script>
 
     //Javacript for responsive navigation menu
     const menuBtn = document.querySelector(".menu-btn");
@@ -82,12 +92,12 @@
       menuBtn.classList.toggle("active");
       navigation.classList.toggle("active");
     });
-      
-        const btns = document.querySelectorAll(".nav-btn");
+
+    const btns = document.querySelectorAll(".nav-btn");
     const slides = document.querySelectorAll(".video-slide");
     const contents = document.querySelectorAll(".content");
 
-    var sliderNav = function(manual){
+    var sliderNav = function (manual) {
       btns.forEach((btn) => {
         btn.classList.remove("active");
       });
@@ -110,7 +120,8 @@
         sliderNav(i);
       });
     });
-    </script>
-    
-  </body>
+  </script>
+
+</body>
+
 </html>
