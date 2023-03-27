@@ -135,7 +135,8 @@ section{
 .home .content a{
   background: #fff;
   padding: 15px 35px;
-  color: #012053;
+  
+  color:  #012053;
   font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
