@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NepTalk</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="learn.css">
+</head>
+<body>
+   <div id="app">
+  <nav class="_nav_learn">
+    <div class="logo">
+      <img src="img/logo.png" alt="logo">
+    </div>
+    <ul class="menu_learn">
+      <li><a href="index.html">Home</a></li>
+      <li class="Alphabet active"><a href="learn.html">Alphabet</a></li>
+      <li class="Vocabulary"><a href="vocabulary.html">Vocabulary</a></li>
+      <li class="Grammar"><a href="grammar.html">Grammar</a></li>
+      <li class="Phrases"><a href="phrases.html">Phrases</a></li>
+      <li class="Conversation"><a href="conversation.html">Conversation</a></li>
+      <li><a href="#popUP">Lang</a></li>
+    </ul>
+  </nav>
+  
+  <div class="_main_Learn">
+    <div class="bgImg">
+      </div>
+    <!-- <section class="question_form active">
+      <div class="question">
+        <h1>How much english do you know?</h1>
+      </div>
+      <div class="answer">
+        <input type="radio" id="answer1" name="answer" >
+        <label for="answer">Beginner</label>
+        <input type="radio" id="answer2" name="answer">
+        <label for="answer">Intermediate</label>
+        <input type="radio" id="answer3" name="answer">
+        <label for="answer">Advanced</label>
+      </div>
+      <div class="button">
+        <button type="submit" name="submit">Submit</button>
+      </div>
+    </section> -->
+    <main class="content">
+      <div class="scenario-row" aria-label="Scenarios" role="region">
+        <button class="scenario-pill active" data-scenario="grocery" aria-pressed="true">
+          <img src="icons/grocery.svg" alt="" aria-hidden="true"><span>Grocery</span>
+        </button>
+        <button class="scenario-pill" data-scenario="restaurant"><img src="icons/restaurant.svg" alt="" aria-hidden="true"><span>Restaurant</span></button>
+        <button class="scenario-pill" data-scenario="taxi"><img src="icons/taxi.svg" alt="" aria-hidden="true"><span>Taxi</span></button>
+        <button class="scenario-pill" data-scenario="garden"><img src="icons/garden.svg" alt="" aria-hidden="true"><span>Garden</span></button>
+      </div>
+
+      <div class="lesson-layout">
+        <section class="lesson-center">
+          <div class="conversation-card" role="region" aria-label="Conversation">
+            <h2>Grocery</h2>
+            <div class="message-list">
+              <div class="message bot">
+                <button class="play-audio" aria-label="Play English audio">▶</button>
+                <div class="bubble">Do you have apples?</div>
+                <button class="play-nepali" aria-label="Play Nepali audio">👂</button>
+              </div>
+              <div class="message user">
+                <div class="bubble">Yes, we do.</div>
+                <div class="avatar"><img src="img/avatar1.svg" alt="Shopkeeper"></div>
+              </div>
+            </div>
+      </div>
+
+          <div class="input-row">
+                <input id="speechInput" placeholder="Tap mic and speak..." aria-label="Speak answer">
+                <button id="micBtn" aria-label="Record">🎤</button>
+              </div>
+
+              <div class="progress-row">
+                <div class="progress-bar" aria-hidden="true"><div class="progress-fill" style="width:35%"></div></div>
+                <div class="progress-percent">35%</div>
+              </div>
+            </div>
+          </section>
+
+      <aside class="lesson-side" aria-label="Support">
+        <div class="streak card">
+          <h3>Streak</h3>
+          <div id="streak_count"></div>
+        </div>
+        <div class="today-words card">
+          <h3>Today's Words</h3>
+          <ul id="todayWords">
+            <li><input type="checkbox" id="w1"><label for="w1">apple</label></li>
+            <li><input type="checkbox" id="w2"><label for="w2">banana</label></li>
+            <li><input type="checkbox" id="w3"><label for="w3">bread</label></li>
+            <li><input type="checkbox" id="w4"><label for="w4">milk</label></li>
+            <li><input type="checkbox" id="w5"><label for="w5">rice</label></li>
+          </ul>
+        </div>
+
+         <div class="vocab-card card">
+                <h3>Vocabulary</h3>
+                <div id="vocabList"> <!-- populated by JS when words appear in conversation -->
+                  <p class="v-word">apple <button class="play-nepali-small">👂</button></p>
+                </div>
+              </div>
+
+              <div class="cultural card">
+                <h3>Cultural Tip</h3>
+                <p>It's polite to greet the shopkeeper when you enter.</p>
+                <div class="xp-row"><span>20 EXP</span><div class="xp-bar"><div class="xp-fill" style="width:20%"></div></div></div>
+              </div>
+            </aside>
+          </div>
+        </main>
+
+      <!-- <section id="grammar" class="lesson-slide">
+        <h2>Grammar</h2>
+        <div class="grammar-block">Is/ Are / Am</div>
+      </section>
+
+      <section id="conversation" class="lesson-slide">
+        <h2>Conversation</h2>
+        <div class="conversation-block">
+          <div class="character-speech">
+            <img src="avatar1.png" alt="Character">
+            <p class="speech-bubble" data-word="hello!"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="vocab-popup" class="hidden">
+      <h3>Vocabulary Word</h3>
+      <p id="vocab-word"></p>
+      <p id="vocab-meaning"></p>
+      <button id="close-vocab-popup">Close</button>
+    </div>
+  </div> -->
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
