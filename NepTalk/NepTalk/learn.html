@@ -61,19 +61,21 @@
             <div class="message-list">
               <div class="message bot">
                 <button class="play-audio" aria-label="Play English audio">▶</button>
-                <div class="bubble">Do you have apples?</div>
-                <button class="play-nepali" aria-label="Play Nepali audio">👂</button>
+                <div class="bubble" id="text-to-read">Do you have apples?</div>
+                <button class="play-nepali" aria-label="Play Nepali audio" id="play-audio" onclick="listen()">👂</button>
               </div>
               <div class="message user">
                 <div class="bubble">Yes, we do.</div>
                 <div class="avatar"><img src="img/avatar1.svg" alt="Shopkeeper"></div>
               </div>
+              <div class="message bot">
+                <input class="bubble" class="user-input" placeholder="Speak to answer" id="speechInput">
             </div>
       </div>
 
           <div class="input-row">
-                <input id="speechInput" placeholder="Tap mic and speak..." aria-label="Speak answer">
-                <button id="micBtn" aria-label="Record">🎤</button>
+                <input id="speechInput-row" placeholder="Tap mic and speak..." aria-label="Speak answer">
+                <button id="micBtn" aria-label="Record" onclick="record()">🎤</button>
               </div>
 
               <div class="progress-row">
@@ -107,8 +109,8 @@
               </div>
 
               <div class="cultural card">
-                <h3>Cultural Tip</h3>
-                <p>It's polite to greet the shopkeeper when you enter.</p>
+                <h3></h3>
+                <p></p>
                 <div class="xp-row"><span>20 EXP</span><div class="xp-bar"><div class="xp-fill" style="width:20%"></div></div></div>
               </div>
             </aside>

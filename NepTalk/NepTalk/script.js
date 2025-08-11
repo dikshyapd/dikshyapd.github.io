@@ -1,8 +1,53 @@
+document.addEventListener('DOMContentLoaded', () => {  document.getElementById('streak_count').textContent = (localStorage.getItem('nt_streak' + 1 + "🔥 days") || '1'  + "🔥 day");
+})
+
 document.addEventListener('DOMContentLoaded', () => {
   updateStreak();
-   document.getElementById('streak_count').textContent = (localStorage.getItem('nt_streak') || '0' ) + "🔥 days";
-  loadTodayWords();
+  loadTranslate();
 })
+
+function record(){
+  var recognition = new webkitSpeechRecognition(); 
+  recognition.lang = 'en-US';
+  recognition.onresult = function(event) {
+    var transcript = event.results[0][0].transcript;
+    document.getElementById('speechInput').value = transcript;
+    console.log(transcript);
+  }
+  recognition.start();
+}
+
+function listen(){
+  let text = document.getElementById('speechInput').value;
+  let speech = new SpeechSynthesisUtterance();
+  let voices = window.speechSynthesis.getVoices();
+
+  speech.voice = voices[5];
+  speech.text = text;
+  speech.lang = "en-US";
+  speech.pitch = 1;
+  speech.volume = 1;
+  speech.rate = 1;
+  window.speechSynthesis.speak(speech);
+}
+
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'ne',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+function loadTranslate(){
+  const translateToggle = document.getElementById('translate-toggle');
+  const googleTranslateElement = document.getElementById('google_translate_element');
+
+  translateToggle.addEventListener('click', () => {
+    googleTranslateElement.classList.toggle('hide');
+    translateToggle.classList.toggle('toggleTransBtn');
+  }); 
+}
 
 function openVocab(word, meaning) {
   const vocabPopup = document.getElementById('vocab-popup');

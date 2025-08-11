@@ -5,6 +5,44 @@ html, body {
   width: 100%;
   font-family: Arial, poppins, sans-serif;
 }
+#google_translate_container {
+  position: fixed;
+  top: 10px;
+  right: 60px;
+  z-index: 9999;
+}
+
+#translate-toggle {
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.toggleTransBtn{
+  background-color: #c6c3c3;
+  border: none;
+  left:255px;
+  outline:auto;
+  outline-width:6px;
+}
+
+
+#translate-toggle img {
+  height: 30px;
+  width: 40px;
+}
+
+#google_translate_element {
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
 
 ._nav_ {
   display: flex;
@@ -50,9 +88,15 @@ html, body {
   position: sticky;
 }
 
-.menu li a:hover {
+.menu li a:hover{
   color: #ffffff;
-  background-color: #85144b;
+  background-color: #216dc1;
+  border-radius: 5px;
+}
+
+.transBtn:hover {
+  color: #ffffff;
+  background-color: #ffffff;
   border-radius: 5px;
 }
 
@@ -189,3 +233,87 @@ html, body {
     transform: translateY(-100%);
   }
  }
+
+/* about page  */
+.aboutPage{
+  padding: 3% 0 10% 0;
+  text-align: left;
+  font-size: 20px;
+  color: #142785;
+}
+
+.aboutContent{
+  padding: 90px 80px 30px 60px;
+  border-radius: 10px;
+  margin-bottom: 20px
+}
+
+.aboutPage h1{
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #142785;
+}
+
+.aboutPage p{
+  font-size: 20px;
+  color: #142785;
+  margin-right: 50%;
+  margin-top: 20px;
+}
+
+/* contact page */
+.contactPage form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contactPage{
+  padding: 3% 0 10% 0;
+  text-align: left;
+  font-size: 20px;
+  color: #142785;
+}
+
+.contactContent{
+  width:40%;
+  height:100%;
+}
+.contactPage form label{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contactPage form input, .contactPage form textarea{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contactPage form button{
+  padding: 10px;
+  background-color: #216ec0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contactPage form button:hover{
+  background-color: #0056b3;
+}
+
+.contactPage form{
+  bottom:150px;
+  position: relative;
+  left: 200px;
+  width: 40%;
+}
