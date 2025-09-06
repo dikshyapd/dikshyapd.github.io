@@ -94,7 +94,8 @@ A minimalist arcade-style runner with strategic progression.
 
 ## 📫 Reach Me
 
-- 📧 Email: [paudeldikshya15@gmail.com]
-- 🧠 GitHub: [https://github.com/dikshyapd](#)
+- 📧 Email: paudeldikshya15@gmail.com
+- 🧠 GitHub: [https://github.com/dikshyapd]
 
 ---
+
