@@ -19,12 +19,14 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
+  border-bottom: 1.5px solid magenta;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 25px;
 }
 
 .logo {
@@ -63,18 +65,21 @@ header {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(to right, #3f51b5, #2196f3);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
+    background: linear-gradient(to right, #000000, #2196f3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0 20px 0 50px;
 }
 
 .hero h1 {
-  font-size: 48px;
+    font-size: 48px;
+    background:-webkit-linear-gradient(45deg, magenta 1%, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -90,7 +95,7 @@ header {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px;
-  background: #ff9800;
+  background: magenta;
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
@@ -98,7 +103,7 @@ header {
 }
 
 .btn:hover {
-  background: #e68900;
+  background: magenta;
 }
 
 .btn-outline {
@@ -172,7 +177,7 @@ header {
 
 .contact-links a {
   text-decoration: none;
-  color: #3f51b5;
+  color: magenta;
   font-weight: bold;
 }
 
