@@ -1,6 +1,4 @@
-Below is a polished, human-sounding, no-emoji README you can paste directly into your personal portfolio site. It keeps your natural tone—direct, thoughtful, and genuine—but stays professional. If you want a shorter/more formal/more casual version, I can adjust it.
 
----
 
 # Hi, I’m Dikshya
 
