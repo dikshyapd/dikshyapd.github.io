@@ -1,143 +1,271 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dikshya Paudel | Software Engineer</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dikshya Paudel | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+      <header>
+        <nav class="navbar">
+          <div class="logo">Dikshya Paudel</div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+          </div>
+        </nav>
+      </header>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">DIA.WORKS</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-toggle" id="menuToggle">&#9776;</div>
-    </nav>
-  </header>
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Software Engineer & <span class="highlight">AI/ML Researcher</span></h1>
+            <p class="subtitle">Creating technology that positively impacts lives at scale</p>
+            <p class="description">I'm a Computer Science major at Berea College passionate about building solutions that empower people. From developing financial transparency tools for homeowners to training machine learning models for osteoporosis detection from X-ray datasets, I focus on creating accessible, impactful technology.</p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn">View Projects</a>
+              <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img src="images/hero.JPEG" alt="Dikshya Paudel" class="hero-image">
+            <div class="stats-card">
+              
+              <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Fellowships</span>
+              </div>
+              
+              <div class="stat-item">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">1B+</span>
+                <span class="stat-label">Simulations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  
-  <section id="home" class="hero">
-    <h1>Dikshya <span class="to_color">Paudel</span></h1>
-    <p>I’m a Computer Science major at Berea College, passionate about building tools that blend creativity with technology. With experience in web design, AI programs, and mathematics research, I thrive at the intersection of problem-solving and design. I’m especially excited about projects involving education, accessibility, and clean code</p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn btn-outline">Get in Touch</a>
-    </div>
-  </section>
+      <section id="about" class="about">
+        <div class="about-container">
+          <div class="section-header">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Building Technology That Makes a Difference</h2>
+            <p class="section-description">Passionate about creating solutions that empower communities and improve lives through thoughtful engineering</p>
+          </div>
 
-  
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hi, I’m Dia, a Computer Science student at Berea College. I work as a Teaching Assistant and Undergraduate Researcher, exploring ways to turn ideas into functional technology. I also completed a web development internship at FusionDev, building projects that solve real-world problems.
+          <div class="about-content">
+            <div class="about-text">
+              <p>I'm a Computer Science student at Berea College with a mission to create technology that serves real people with real needs. Whether it's building financial transparency tools for homeowners or developing machine learning models for medical diagnosis, I'm driven by impact.</p>
+              <p>I've worked with full-stack development, artificial intelligence, and mathematical modeling. I've also trained ML models on X-ray datasets for osteoporosis detection and created platforms that help people make informed financial decisions about their homes.</p>
+              <p>Through fellowships with AI4ALL, SEO, and CodePath, along with my role as a Teaching Assistant and Undergraduate Researcher, I combine technical excellence with a human-centered approach to problem-solving.</p>
+            </div>
 
-      I’m a fellow of AI4ALL, SEO, and CodePath, where I developed skills in artificial intelligence, optimization, and technical problem-solving. I’m passionate about creating innovative projects and rewriting the code to make an impact.</p>
-    
-    
-    <h3>Skills & Technologies</h3>
-    <ul class="skills">
-      <li>Programming: C++, Java, Python, JavaScript, MySQL</li>
-      <li>Web Development: HTML/CSS, WordPress, Git, PHP, Responsive Design</li>
-      <li>Data & Tools: Pandas, Jupyter Notebooks, CAD</li>
-      <li>Certifications: Google IT Support Certificate, Microsoft MTA: HTML/CSS, Certiport Python, IC3 Digital Literacy</li>
-      <!-- <li>Web Performance</li> -->
-    </ul>
-  </section>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>AI & Machine Learning</h3>
+                <p>Google Colab, EfficientNet, Residual Network, Neural Networks, Medical Imaging Analysis</p>
+              </div>
+              <div class="skill-category">
+                <h3>Programming</h3>
+                <p>Python, C++, Java, JavaScript, MySQL</p>
+              </div>
+              <div class="skill-category">
+                <h3>Web Development</h3>
+                <p>HTML/CSS, PHP, React, WordPress, Git, Responsive Design</p>
+              </div>
+              <div class="skill-category">
+                <h3>Data & Analytics</h3>
+                <p>Pandas, Jupyter Notebooks, Data Visualization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  
- 
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-<div class="displayPro">
-      <div class="project-card">
-        <h3>Agression Player</h3>
-        <p>Developed a Java tool simulating 1B+ board states for game theory research on the board game Aggression.</p>
-        <span class="tags">Java · UX · Responsive</span>
-      </div>
-     
-      <div class="project-card">
-      <h3>NepTalk (In Progress)</h3>
-      <p>A language-learning website for Nepali speakers to learn English with audio and vocabulary tools.</p>
-      <span class="tags">HTML · CSS · JavaScript</span>
-    </div>
-    <div class="project-card">
-      <h3>Cosmic Launch</h3>
-      <p>An interactive award-winning website for Technology Student Association competition</p>
-      <span class="tags">HTML · CSS · JavaScript</span>
-    </div>
-  </div>
-  </section>
-  
+      <section id="projects" class="projects">
+        <div class="projects-container">
+          <div class="section-header">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-description">A selection of my work demonstrating technical expertise and problem-solving abilities</p>
+          </div>
+          <div class="project-card" data-project="osteoporosis">
+            <div class="project-image"><div id="first_img"><img src="images/ost.png"></div></div>
+            <div class="project-content">
+              <h3>Osteoporosis Detection</h3>
+              <p>
+                Collaborative AI4ALL project focused on building machine learning models to detect osteoporosis from X-ray images. 
+                Utilized transfer learning, dataset cleaning, and experimentation with EfficientNet-B3, ResNet-50, and ResNet-18, achieving an 85% accuracy rate. 
+                Deployed with Streamlit, allowing users to upload X-rays and receive real-time model predictions.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Google Colab</span>
+                <span class="tag">Transfer Learning</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Machine Learning</span>
+              </div>
+              <a href="https://github.com/dikshyapd/Osteoporosis_DataSet" class="project-link">View Project →</a>
+            </div>
+          </div>
 
+          <div class="projects-grid">
+            <div class="project-card" data-project="neptalk">
+              <div  class="project-image"><img src="images/nt.png"></div>
+              <div class="project-content">
+                <h3>NepTalk</h3>
+                <p>An interactive language-learning platform designed for Nepali speakers learning English, featuring audio pronunciation tools and comprehensive vocabulary modules.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">UI/UX</span>
+                </div>
+                <a href="#contact" class="project-link">Ask Me More →</a>
+              </div>
+            </div>
 
-  <section id="experience" class="experience">
-  <h2>Experience</h2>
-    <div class="exprience-card">
-      <h3>Front-End Web Designer Intern </h3>
-      <span class="tags">Fusion Development <br>2023 - 2024</span>
-      <p>Built interactive financial management tools with PHP, HTML, CSS, and JS. Focused on responsive design and user testing.</p>
-    </div>
-    
-    <div class="exprience-card">
-        <h3>Undergraduate Math Research Assistant</h3>
-        <span class="tags"> Berea College <br>2025</span>
-        <p>Researched game theory applications, built Java simulation & a website for findings.
-        </p>
-      </div>
-    
-    <div class="exprience-card">
-      <h3>Materials Lab Teaching Assistant </h3>
-      <span class="tags"> Berea College<br>2024 - Present</span>
-      <p>Maintained lab tools, supported students, ensured safe/efficient learning environments.
-      </p>
-    </div>
+            <div class="project-card" data-project="aggression">
+              <div class="project-image"><img src="images/ag.png"></div>
+              <div class="project-content">
+                <h3>Aggression Game Theory Simulator</h3>
+                <p>Advanced Java application simulating over 1 billion board states for mathematical research on the strategic board game Aggression.</p>
+                <div class="project-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Algorithm Design</span>
+                  <span class="tag">Research</span>
+                </div>
+                <a href="https://github.com/dikshyapd/gameTheory_Java_app" class="project-link">View Project →</a>
+              </div>
+            </div>
 
-    <div class="exprience-card">
-      <h3>President – Technology Student Association club </h3>
-      <span class="tags"> Bryan Station High School <br>2023 - 2024</span>
-      <p>Led 50-member STEM club, managed projects, and won multiple awards in web competitions.
-      </p>
-    </div>
-    <!-- 
-    <div class="exprience-card">
-      <h3>Front-End </h3>
-      <span class="tags"> <br>2023 - 2024</span>
-      <p>B
-      </p>
-    </div> -->
-    <!-- 
-      <div class="exprience-card">
-        <h3>AI4ALL Fellow</h3>
-        <p>AI4ALL</p>
-          <span class="tags">Fall 2022 - Present</span>
-        </div> -->
-        
-    
-  </section>
+            <div class="project-card" data-project="cosmic">
+              <div class="project-image"><img src="images/cl.png"></div>
+              <div class="project-content">
+                <h3>Cosmic Launch</h3>
+                <p>Award-winning interactive website developed for the Technology Student Association competition, featuring space exploration themes and engaging user experiences.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Animation</span>
+                 
+                </div>
+                <a href="https://dlane.org/artifacts/CosmicLaunch/" class="project-link">View Project →</a>
+              </div>
+            </div>
+           
 
+            <div class="project-card" data-project="financial">
+              <div class="project-image"><img src="images/els.png"></div>
+              <div class="project-content">
+                <h3>Financial Management Platform</h3>
+                <p>Full-stack web application for financial analysis and understanding of costs about clean energy. Built with emphasis on responsive design and comprehensive user testing: Internship project.</p>
+                <div class="project-tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Full-Stack</span>
+                  
+                </div>
+                <a href="#contact" class="project-link">Ask Me More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section id="contact" class="contact">
-    <h2>Get In Touch</h2>
-    <p>I'm always open to new opportunities and interesting projects. Let's connect and create something amazing together.</p>
-    <ul class="contact-links">
-      <li><a href="mailto:paudeldikshya15@gmail.com">📧 paudeldikshya15@gmail.com</a></li>
-      <li><a href="https://www.linkedin.com/in/dikshya-paudel-dp335/" target="_blank">🔗 LinkedIn</a></li>
-      <li><a href="https://github.com/dikshyapd" target="_blank">💻 GitHub</a></li>
-    </ul>
-  </section>
+      <section id="experience" class="experience">
+        <div class="experience-container">
+          <div class="section-header">
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">Professional Journey</h2>
+          </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Dikshya Paudel. All rights reserved. </p>
-  </footer>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2024 - Present</div>
+              <div class="timeline-content">
+                <h3>Materials Lab Teaching Assistant</h3>
+                <div class="timeline-company">Berea College</div>
+                <p>Support 50+ students in laboratory environments, maintain specialized equipment, and ensure adherence to safety protocols while fostering efficient learning experiences.</p>
+              </div>
+            </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+            <div class="timeline-item">
+              <div class="timeline-date">2025</div>
+              <div class="timeline-content">
+                <h3>Undergraduate Math Research Assistant</h3>
+                <div class="timeline-company">Berea College</div>
+                <p>Conducted advanced research in game theory applications, developed Java simulation tools processing 1B+ states, and created comprehensive documentation website for research findings.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2023 - 2024</div>
+              <div class="timeline-content">
+                <h3>Front-End Web Designer Intern</h3>
+                <div class="timeline-company">Fusion Development</div>
+                <p>Designed and implemented interactive financial management tools using PHP, HTML, CSS, and JavaScript. Focused on responsive design principles and conducted extensive user testing.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2023 - 2024</div>
+              <div class="timeline-content">
+                <h3>President, Technology Student Association</h3>
+                <div class="timeline-company">Bryan Station High School</div>
+                <p>Led 50-member STEM organization, coordinated multiple technical projects, and secured multiple competitive awards in web design and development competitions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <div class="section-header">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-description">I'm always open to discussing new opportunities, innovative projects, or potential collaborations</p>
+          </div>
+
+          <div class="contact-grid">
+            <a href="mailto:paudeldikshya15@gmail.com" class="contact-card">
+              <!-- <div class="contact-icon"></div> -->
+              <h3>Email</h3>
+              <p>paudeldikshya15@gmail.com</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/dikshya-paudel-dp335/" target="_blank" rel="noopener" class="contact-card">
+              <!-- <div class="contact-icon"></div> -->
+              <h3>LinkedIn</h3>
+              <p>Connect with me</p>
+            </a>
+
+            <a href="https://github.com/dikshyapd" target="_blank" rel="noopener" class="contact-card">
+              <!-- <div class="contact-icon"></div> -->
+              <h3>GitHub</h3>
+              <p>View my code</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 Dikshya Paudel. All rights reserved.</p>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html
