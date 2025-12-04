@@ -1,102 +1,115 @@
-# 👋 Hey, I'm Dia Paudel — Developer by day, Worldbuilder by night.
-
-> *"I build apps, break down algorithms, and dream up dystopias."*
-
-## 📍 About Me
-
-I'm a Computer Science & Engineering Technologies student at Berea College (`Class of 2028`) with a passion for full-stack development, language accessibility, and storytelling.
-
-Whether I’m helping build web tools for energy equity, simulating game theory on a billion board states, or writing a fantasy novel about a princess hiding a deadly secret in a crumbling caste system—I’m always chasing complexity with clarity.
+Below is a polished, human-sounding, no-emoji README you can paste directly into your personal portfolio site. It keeps your natural tone—direct, thoughtful, and genuine—but stays professional. If you want a shorter/more formal/more casual version, I can adjust it.
 
 ---
 
-## 💡 My Recent Projects
+# Hi, I’m Dikshya
 
-### 🌐 [NepTalk](#) (In Progress)
-An English-learning web platform built for Nepali speakers. 
-- HTML/CSS/JavaScript + Git (Learning React)
-- Native-language audio integration
-- Accessibility-first UI/UX design
+Welcome to my portfolio. I’m a Computer Science student at Berea College, and I love building things—tools, websites, simulations, whatever lets me merge creativity with technical problem-solving. I’m driven by curiosity, and I tend to take on projects that teach me something new or challenge me to think differently.
 
-### 🎲 Game Theory Java Simulation
-Analyzed billions of board states to simulate win probabilities in a custom board game called *Aggression*.
-- Built using Java & Discrete Math
-- Published findings via interactive website
+Right now, I’m especially interested in software engineering, front-end development, data structures, and any tech that blends design with functionality. I’m also exploring language learning tools, game theory, and accessible web design.
 
-### 🚀 [Cosmic Launch](https://dlane.org/artifacts/CosmicLaunch/)
-Award-winning TSA Webmaster competition project.
-- Responsive site built with HTML/CSS/Bootstrap
-- Placed 2nd in regional/state competitions
-
-### ⚔️ [Dash Wars](https://dlane.org/artifacts/DashWars/)
-A minimalist arcade-style runner with strategic progression.
+This page highlights my work, experience, and what I’ve been learning along the way.
 
 ---
 
-## 🔧 Skills Snapshot
+## Education
 
-- **Languages**: C++, Java, Python, JavaScript, HTML/CSS, SQL
-- **Tools**: Git, WordPress, CAD, MySQL, PHP
-- **Certs**: Google IT Support • MTA HTML/CSS • Python • IC3 Master
+**Berea College — B.A. in Computer Science**
+GPA: 3.84, Dean’s List (August 2024)
+Expected Graduation: May 2027
 
----
-
-## 🧪 Research & Experience Highlights
-
-- **Materials Lab TA @ Berea College**
-  - Maintained precision tools & helped students craft their engineering projects
-
-- **Front-End Intern @ Fusion Development**
-  - Built sustainable finance dashboards
-
-- **Math Research Assistant**
-  - Simulated AI agents & game theory with custom Java code
-
-- **IT Support Assistant**
-  - Repaired Chromebooks, ran diagnostics, and supported staff
-
-- **Investment Analyst**
-  - Co-managed a $200K stock portfolio, ran SWOT analysis
+AI4ALL IGNITE Program (Fall 2025)
+CodePath Intermediate Technical Interview Prep 102 (Fall 2025)
 
 ---
 
-## ✍️ Writing Projects
+## Skills
 
-- **📕 [Too Many Scoops](https://shorturl.at/9LlkT)**
-  - Children’s book on patience & self-control (ages 2–10)
-  - Self-published on Amazon, managed editing + launch
+**Languages & Tools:**
+C++, Java, Python, JavaScript, MySQL, Git, HTML/CSS, WordPress, CAD, Pandas, Jupyter Notebooks
 
-- **🧬 WIP Novel: Untitled Dystopian Fantasy**
-  - Current title: "Uncouchables"
-  - Aurenna is royalty. Or so she thought. 
-  - Secret friendships, scarred truths, and viral collapse.
-  - She’s not meant to rule — she was born to survive.
----
+**Courses:**
+Data Structures, Calculus I, Java I, Trigonometry with Applications, College Algebra with Modeling, Discrete Mathematics, Database Design Fundamentals, Computational Thinking, CS Principles
 
-## 🎖️ Competitions
-
-- **CyberPatriot XVII – Gold Tier**
-  - Secured Windows/Linux systems under pressure
-  - National-level semifinalist
-
-- **TSA Webmaster**
-  - 2x State Runner-Up, 1x Regional Third
-  - Projects showcased at [dlane.org/artifacts](https://dlane.org/artifacts/)
+**Certifications:**
+Google IT Support Certificate (verification available)
+Microsoft Technology Associate: Intro to Programming using HTML & CSS
+Certiport: Python Certification, IC3 Digital Literacy Master
 
 ---
 
-## ☁️ I’m currently...
+## Experience
 
-- Building a Nepali-English learning platform
-- Plotting a multi-book fantasy saga full of betrayal, blackmail, and biopowers
+### Materials Lab Teaching Assistant — Berea College
+
+**August 2024 – Present**
+I support the Engineering Technologies and Applied Design department by maintaining tools, managing inventory, and helping over 200 students and faculty work safely and confidently in the lab. I assist with workshops throughout the week and keep the environment running efficiently.
+
+### NepTalk (In Progress) — English Learning Website
+
+**May 2025 – Present**
+I’m creating a language-learning platform for Nepali speakers. The site is built with HTML, CSS, JavaScript, and Git, with a focus on clarity, accessibility, and intuitive design. I’m currently testing audio integration that pairs spoken Nepali with English phrases and exploring UX approaches for beginner-friendly learning.
+
+### Investment Analyst — Berea College Motley Fool Investment Club
+
+**January 2025 – Present**
+I help analyze and manage a student-run portfolio valued at over $200,000. I study company fundamentals, follow market trends, contribute to SWOT analyses, and participate in a $500,000 virtual trading competition. It’s been a great way to sharpen analytical thinking and understand financial decision-making.
+
+### Undergraduate Mathematics Research Assistant — Berea College
+
+**May 2025 – July 2025**
+Researched game theory applied to the board game Aggression. I built a Java simulation to calculate real-time win probabilities and wrote a program that analyzed nearly one billion board states. I also launched a website to present the research and share interactive tools with a broader audience.
+
+### Front-End Web Designer Intern — Fusion Development
+
+**August 2023 – May 2024**
+I developed an interactive PHP-based website used by 200+ homeowners to access tools for sustainable energy solutions. I worked closely with a professional dev team, improved workflow processes, and delivered responsive, mobile-first designs. After iterative testing with 40+ users, we refined the interface and increased usability across all devices. Our team delivered the project more than 25 days ahead of schedule.
+
+### President — Technology Student Association
+
+**August 2023 – May 2024**
+Led a 50-member STEM organization, organized meetings, managed officers, and oversaw competition prep. I maintained the official TSA website and placed twice in 2nd and once in 3rd in the statewide Webmaster competition with responsive sites built using HTML, CSS, and Bootstrap.
+
+### CyberPatriot Competitor — Gold Tier
+
+**October 2023 – January 2024**
+Worked with a 4-member team analyzing Windows and Linux virtual machines during cybersecurity defense challenges. We ranked in the Gold Tier (top 40% nationally) and qualified for the State and Semifinal rounds.
+
+### Information Technology Assistant — Bryan Station High School
+
+**August 2023 – May 2024**
+Troubleshot tech issues for 150+ staff and 1500+ students, managed Chromebook diagnostics and replacements, and performed hardware repairs including screen replacements. My role helped keep day-to-day school operations running smoothly.
+
+### Co-Author — “Too Many Scoops”
+
+**Published April 2024**
+I co-authored a children’s book for ages 2–10 that teaches lessons about patience and consequences through imaginative storytelling. I helped coordinate with an illustrator, revised the manuscript, and handled the Amazon publishing process.
+
+### Front-End Assistant — Kroger
+
+**June 2023 – July 2023**
+Assisted hundreds of customers daily, maintained store safety, and supported smooth checkout operations.
 
 ---
 
-## 📫 Reach Me
+## Projects
 
-- 📧 Email: paudeldikshya15@gmail.com
-- 🧠 GitHub: [https://github.com/dikshyapd]
+**Cosmic Launch**
+[https://dlane.org/artifacts/CosmicLaunch/](https://dlane.org/artifacts/CosmicLaunch/)
+
+**Dash Wars**
+[https://dlane.org/artifacts/DashWars/](https://dlane.org/artifacts/DashWars/)
+
+**Aggression Game Assistant WebApp**
+[https://github.com/dikshyapd/gameTheory_Java_app](https://github.com/dikshyapd/gameTheory_Java_app)
+
+**NepTalk (In Progress)**
+Language-learning site for Nepali speakers, built from scratch with a focus on clarity and accessibility.
 
 ---
 
+## What I’m Focused On Now
 
+Building meaningful tools, sharpening my engineering fundamentals, and working on projects that blend logic, creativity, and design. I’m also working on understanding how people interact with technology so I can build experiences that feel intuitive and helpful.
+
+If you’d like a version that sounds more narrative, more technical, or more formal, let me know—I can tailor it to match your website perfectly.
